@@ -1,4 +1,4 @@
-# newrctfile
+# nvue
 
 Simple tool to create a Vue component
 
