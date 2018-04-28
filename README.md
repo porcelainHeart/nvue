@@ -9,8 +9,10 @@ Simple tool to create a Vue component
 ```
 > nvue table
 Created  table.vue
-> nvue table -p
-Created  table/index.vue
+
+> nvue table -t table
+Created  table.vue used element-form-table template
+You can also use `nvue table -t t` instead
 ```
 
 ### TODO
