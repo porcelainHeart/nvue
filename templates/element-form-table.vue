@@ -42,6 +42,7 @@
 
 <script>
 export default {
+  name: '__NAME__',
   data () {
     return {
       form: {

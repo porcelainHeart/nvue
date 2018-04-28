@@ -52,8 +52,7 @@ if (argv._.length < 1) {
   process.exit(1)
 }
 
-let param = argv.t
-console.log(param)
+let param = argv.t || argv._[1]
 //
 // templates
 //
