@@ -1,0 +1,29 @@
+{
+  "name": "nvue",
+  "version": "0.0.1",
+  "description": "Simple tool to create a Vue component files",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/porcelainHeart/nvue"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "node",
+    "terminal",
+    "component"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "nvue": "./index.js"
+  },
+  "author": "fusheng",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "yargs": "^11.0.0"
+  }
+}
