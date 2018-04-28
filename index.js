@@ -1,10 +1,15 @@
 #! /usr/bin/env node
 
-let args = process.argv
-let argv = require('yargs').argv
 let path = require('path')
 let fs = require('fs')
 let mkdirp = require('mkdirp')
+let argv = require('yargs')
+  .usage('Usage: nvue [filename]')
+  .example('nvue table', 'Created  table.vue')
+  .help('h')
+  .alias('h', 'help')
+  .epilog('copyright 2018')
+  .argv
 
 const handleError = err => {
   if (err) {
