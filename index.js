@@ -10,6 +10,12 @@ let argv = require('yargs')
     describe: 'template name',
     type: 'string'
   })
+  .option('l', {
+    alias : 'list',
+    boolean: true,
+    default: false,
+    describe: 'template list',
+  })
   .usage('Usage: nvue [filename] [option]')
   .example('nvue table -t t')
   .help('h')
@@ -46,11 +52,21 @@ const writeFile = (file, contents) => {
 const tmp = {
   t: 'element-form-table.vue',
   table: 'element-form-table.vue',
+  f: 'element-form.vue',
+  form: 'element-form.vue',
 }
+
+if(argv.l) {
+  for (let key in tmp) console.log(`${key} => ${tmp[key]}`)
+  process.exit(0)
+  return false
+}
+
 if (argv._.length < 1) {
   console.error('Usage: missing fliename')
   process.exit(1)
 }
+
 
 let param = argv.t || argv._[1]
 //
