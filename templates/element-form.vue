@@ -11,6 +11,7 @@
 <script>
 import { doSubmit } from ''
 export default {
+  name: '__NAME__',
   props: {},
   data() {
     return {

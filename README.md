@@ -19,7 +19,7 @@ You can also use `nvue table -t t` or `nvue table t` instead
 
 - [element-form-table : `table` or `t`](./templates/element-form-table.vue)
 - [element-form : `form` or `f`](./templates/element-form.vue)
-- [base-vue-template : none params](./templates/tpl.vue)
+- [base-vue-template : no params](./templates/tpl.vue)
 
 
 ### TODO
