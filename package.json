@@ -1,6 +1,6 @@
 {
   "name": "nvue",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple tool to create a Vue component files",
   "main": "index.js",
   "repository": {
