@@ -5,7 +5,7 @@ let fs = require('fs')
 let mkdirp = require('mkdirp')
 let argv = require('yargs')
   .option('t', {
-    alias : 'tmp',
+    alias : 'template',
     default: '',
     describe: 'template name',
     type: 'string'
@@ -49,7 +49,7 @@ const writeFile = (file, contents) => {
   })
 }
 
-const tmp = {
+const tpl = {
   t: 'element-form-table.vue',
   table: 'element-form-table.vue',
   f: 'element-form.vue',
@@ -57,7 +57,7 @@ const tmp = {
 }
 
 if(argv.l) {
-  for (let key in tmp) console.log(`${key} => ${tmp[key]}`)
+  for (let key in tpl) console.log(`${key} => ${tpl[key]}`)
   process.exit(0)
   return false
 }
@@ -73,7 +73,7 @@ let param = argv.t || argv._[1]
 // templates
 //
 
-let vueFile = fs.readFileSync(path.join(__dirname, 'templates', tmp[param] || 'tmp.vue')).toString()
+let vueFile = fs.readFileSync(path.join(__dirname, 'templates', tpl[param] || 'tpl.vue')).toString()
 
 let newVueFile = argv._[0]
 

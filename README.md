@@ -8,13 +8,20 @@ Simple tool to create a Vue component
 ### Usage:
 ```
 > nvue table
-Created  table.vue
+Created  table.vue used base template
 
 > nvue table -t table
 Created  table.vue used element-form-table template
 You can also use `nvue table -t t` or `nvue table t` instead
 ```
 
+### TEMPLATE LIST
+
+- [element-form-table : `table` or `t`](./templates/element-form-table.vue)
+- [element-form : `form` or `f`](./templates/element-form.vue)
+- [base-vue-template : none params](./templates/tpl.vue)
+
+
 ### TODO
 * support more templates
-* custom templates
+* support more command
