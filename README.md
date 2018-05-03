@@ -1,3 +1,5 @@
+English | [简体中文](README_CN.md)
+
 # nvue
 
 Simple tool to create a Vue component
